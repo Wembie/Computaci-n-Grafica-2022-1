@@ -1,0 +1,4 @@
+﻿cl : línea de comandos warning D9035: La opción 'Gm' está desusada y se quitará en próximas versiones
+  main.cpp
+C:\Users\Wembie\Desktop\GLSL_Lighting\main.cpp(82,1): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+  TemplateProject.vcxproj -> C:\Users\Wembie\Desktop\GLSL_Lighting\Debug\TemplateProject.exe
