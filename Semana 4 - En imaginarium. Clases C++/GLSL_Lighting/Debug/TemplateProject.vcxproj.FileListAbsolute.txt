@@ -1,0 +1,4 @@
+C:\Users\Wembie\Desktop\GLSL_Lighting\Debug\TemplateProject.exe
+C:\Users\Wembie\Desktop\Computaci-n-Grafica-2022-1-main\Semanas 2 - 3. Segundo círculo Limbo. OGL Basico\GLSL_Lighting\Debug\TemplateProject.exe
+D:\Desktop\Computaci-n-Grafica-2022-1-main\Semanas 2 - 3. Segundo círculo Limbo. OGL Basico\GLSL_Lighting\Debug\TemplateProject.exe
+D:\Desktop\Computaci-n-Grafica-2022-1-main\Semana 4 - En imaginarium. Clases C++\GLSL_Lighting\Debug\TemplateProject.exe
