@@ -1,0 +1,12 @@
+﻿cl : línea de comandos warning D9035: La opción 'Gm' está desusada y se quitará en próximas versiones
+  main.cpp
+C:\Users\Home\Desktop\octavo semestre\computacion grafica\ComputacionGrafica-master\main.cpp(48,10): warning C4101: 'h': variable local sin referencia
+C:\Users\Home\Desktop\octavo semestre\computacion grafica\ComputacionGrafica-master\main.cpp(48,7): warning C4101: 'w': variable local sin referencia
+C:\Users\Home\Desktop\octavo semestre\computacion grafica\ComputacionGrafica-master\main.cpp(90,1): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Home\Desktop\octavo semestre\computacion grafica\ComputacionGrafica-master\main.cpp(100,1): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Home\Desktop\octavo semestre\computacion grafica\ComputacionGrafica-master\main.cpp(107,1): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Home\Desktop\octavo semestre\computacion grafica\ComputacionGrafica-master\main.cpp(108,1): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Home\Desktop\octavo semestre\computacion grafica\ComputacionGrafica-master\main.cpp(132,1): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Home\Desktop\octavo semestre\computacion grafica\ComputacionGrafica-master\main.cpp(138,1): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Home\Desktop\octavo semestre\computacion grafica\ComputacionGrafica-master\main.cpp(215,10): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  TemplateProject.vcxproj -> C:\Users\Home\Desktop\octavo semestre\computacion grafica\ComputacionGrafica-master\Debug\TemplateProject.exe
