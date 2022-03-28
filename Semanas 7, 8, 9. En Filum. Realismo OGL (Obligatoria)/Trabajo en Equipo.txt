@@ -1,0 +1,5 @@
+Angelo: Colocacion de mallas en OpenGl con susrespectivas distancias para formar el mundo
+Juan: Transformacion de mallas .blend a .obj y hacer mover a winston con sus respectivas teclas (WASD)
+Fabian: Orientar y guiar a los demas compañeros para que todo saliera como se esperaba y ademas de ello busco las texturas para unas mallas y la aplicacion de la misma
+
+Conclusion: Todo el equipo trabajó
