@@ -36,11 +36,28 @@ protected:
    GLMmodel* objmodel_ptr[11];
    GLMmodel* objmodel_ptr1; //*** Para Textura: variable para objeto texturizado
    GLuint texid; //*** Para Textura: variable que almacena el identificador de textura
+   bool xIzquierda, xDerecha, zFrente, zAtras;
+   float posX, posZ;
    
 
 
 public:
 	myWindow(){}
+
+	void moverMalla() {
+		if (xIzquierda) {
+			posX -= 0.05;
+		}
+		if (xDerecha) {
+			posX += 0.05;
+		}
+		if (zFrente) {
+			posZ += 0.05;
+		}
+		if (zAtras) {
+			posZ -= 0.05;
+		}
+	}
 
 	//*** Para Textura: aqui adiciono un método que abre la textura en JPG
 	void initialize_textures(void)
@@ -60,8 +77,8 @@ public:
 
 		// Loading JPG file
 		FIBITMAP* bitmap = FreeImage_Load(
-			FreeImage_GetFileType("./Mallas/bola.jpg", 0),
-			"./Mallas/bola.jpg");  //*** Para Textura: esta es la ruta en donde se encuentra la textura
+			FreeImage_GetFileType("./Mallas/WOOD20L.jpg", 0),
+			"./Mallas/WOOD20L.jpg");  //*** Para Textura: esta es la ruta en donde se encuentra la textura
 
 		FIBITMAP* pImage = FreeImage_ConvertTo32Bits(bitmap);
 		int nWidth = FreeImage_GetWidth(pImage);
@@ -84,6 +101,7 @@ public:
 
       glPushMatrix();
 	 // glRotatef(timer010 * 360, 0.5, 1.0f, 0.1f);
+	  moverMalla();
 
       if (shader) shader->begin();
 			//alejamos la camara en z para ver todo el panorama	
@@ -98,7 +116,7 @@ public:
 		  // colocamos a winston vigilante
 		  glPushMatrix();
 		  glScalef(0.2, 0.2, 0.2);
-		  //glTranslatef(0,0, 0);
+		  glTranslatef(posX,0, posZ);
 		  glmDraw(objmodel_ptr[10], GLM_SMOOTH | GLM_MATERIAL);
 		  glPopMatrix();
 
@@ -200,6 +218,8 @@ public:
 		time0 = clock();
 		timer010 = 0.0f;
 		bUp = true;
+		posX = 0.0;
+		posZ = 0.0;
 
 		//Abrir mallas
 		
@@ -245,10 +265,10 @@ public:
 		  glmVertexNormals(objmodel_ptr1, 90.0);
 	  }
 	  */
-	/*
-	  //*** Para Textura: abrir archivo de textura
-	  initialize_textures();
-      */
+	
+	  //** Para Textura: abrir archivo de textura
+	  //initialize_textures();
+      
 	  DemoLight();
 	  
 	}
@@ -281,14 +301,42 @@ public:
 		{
 			this->Close(); // Close Window!
 		} 
+		switch (cAscii){
+			case('d'):
+				xIzquierda = true;
+				break;
+			case('a'):
+				xDerecha = true;
+				break;
+			case('w'):
+				zFrente = true;
+				break;
+			case('s'):
+				zAtras = true;
+				break;
+			default:
+				break;
+		}
 	};
 
 	virtual void OnKeyUp(int nKey, char cAscii)
 	{
-      if (cAscii == 's')      // s: Shader
-         shader->enable();
-      else if (cAscii == 'f') // f: Fixed Function
-         shader->disable();
+		switch (cAscii) {
+		case('d'):
+			xIzquierda = false;
+			break;
+		case('a'):
+			xDerecha = false;
+			break;
+		case('w'):
+			zFrente = false;
+			break;
+		case('s'):
+			zAtras = false;
+			break;
+		default:
+			break;
+		}
 	}
 
    void UpdateTimer()
