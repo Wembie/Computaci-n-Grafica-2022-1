@@ -1,1 +1,2 @@
 C:\Users\Home\Desktop\octavo semestre\computacion grafica\ComputacionGrafica-master\Debug\TemplateProject.exe
+D:\Desktop\ComputacionGrafica-master\Debug\TemplateProject.exe
